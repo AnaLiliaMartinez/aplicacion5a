@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+ 
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+ 
+<body onLoad="MM_preloadImages('imagenes/tierra.jpg','imagenes/medio_ambiente.jpg','imagenes/globe1.gif','imagenes/calentamiento_global1.png','imagenes/cambio1.gif','imagenes/calen.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Día de la Tierra</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+ <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/tierra.jpg',1)"><img src="imagenes/dia_tierra.jpg" width="400" height="335" id="Image5"></a>
+  </div>
+  </div>
+  
+<div>
+
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>¿Que es el día de la tierra?</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Cuidado del medio Ambiente</h2>
+       </a>
+     </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Tipos de contaminación</h2>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Calentamiento Global y Cambio Climático</h2>
+      </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Posibles soluciones contra la contaminación</h2>
+      </a>
+      </li>
+   </ul>
+</div>
+<br><br>
+<div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:1002px;height:176px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+<br><br>
+<div data-role="footer" align="center" data-theme="a">
+    <div data-role="footer" align="center" data-theme="a">
+  <h4>App 5<br> Martínez Poblano Ana Lilia</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿QUÉ ES EL DÍA DE LA TIERRA?</h1>
+  </div>
+ <div data-role="content">
+  <div align="center">
+     <p>El Día de la Tierra es un día celebrado en muchos para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+  </div>
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>¿Cuando es?</h1>
+     <div>
+     <p>22 de Abril</p>
+     <br>
+     </div>
+  </div>
+  
+    <div data-role="collapsible" data-content-theme="false">
+    <h1>¿Cuando comenzó?</h1>
+     <div>
+     <p>En el año 1970 y  con la participación en EE.UU de 20 millones de personas, su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común.</p>
+     <br>
+     </div>
+  </div><br><br>
+  
+  <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/globe1.gif',1)"><img src="imagenes/mundo_manos.jpg" width="300" height="400" id="Image18"></a></div>
+  
+ </div>
+ <div data-role="footer" align="center" data-theme="a">
+  <h4>App 5 <br>
+  Martínez Poblano Ana Lilia</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+</div>
+    
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CUIDADO DEL MEDIO AMBIENTE</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>Es el deber de todos cuidar el medio ambiente﻿ para vivir en un ambiente sano y equilibrado ecológicamente. Existen varias formas de cuidado como por ejemplo:<br></p><br>
+ <p>-Manejo de los bosques.</p><p> Protección de los suelos y reforestación.</p>
+ <p>Reducción de la pesca excesiva.</p>
+<p>No desperdiciar los recursos como el agua o las áreas verdes de los que otros se pueden favorecer y así contribuir al equilibrio del planeta.</p>
+<p> Reducir, reciclar y reutilizar. Principalmente las cosas de vidrio, papel y plástico, aunque también puede aplicarse a las pilas alcalinas.</p>
+<p>Antes de tirar cualquier cosa a la basura, piensa si se puede reutilizar, reciclar o reparar, o si puede ser útil para otra persona.</p></div>
+<div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/medio_ambiente.jpg',1)"><img src="imagenes/cuidado_medio_ambiente.jpg" width="350" height="415" id="Image9"></a></div>
+
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Medidas de reciclaje</h1>
+     <div>
+     <p><h2>Regla de las "3R"</h2></p>
+     <br><p>Reducir: Acciones para reducir la producción de objetos susceptibles de convertirse en residuos, con medidas de compra racional, uso adecuado de los productos, compra de productos sostenibles,etc...</p>
+     <p>Reutilizar: Acciones que permiten el volver a usar un determinado producto para darle una segunda vida, con el mismo uso u otro diferente. Medidas encaminadas a la reparación de productos y alargar su vida útil</p>
+     <p>Reciclar: Conjunto de operaciones de recogida y tratamiento de residuos que permiten reintroducirlos en un ciclo de vida. Se utiliza la separación de residuos en origen para facilitar los canales adecuados.</p>
+     <div align="center">
+      <img src="imagenes/glob.gif" width="50%" height="50%"></div>
+     <br>
+     </div>
+  </div>
+  
+<div data-role="collapsible" data-content-theme="false">
+    <h1>Consejos para cuidar el medio ambiente</h1>
+     <div>
+     <p>-Antes de tirar cualquier cosa a la basura, piensa si se puede reutilizar, reciclar o reparar, o si puede ser útil para otra persona.</p>
+     <p>-Evita las latas de bebidas, vale más el envase que su contenido y apenas se recuperan.</p>
+     <p>-La energía que producen las pilas es más de 600 veces más cara que la de la red. Conecta los aparatos a la red siempre que esto sea posible. Nunca tires las usadas a la basura)</p>
+     <p>-Desconecta los aparatos eléctricos de la red cuando no están funcionando.</p>
+     <p>-Prescinde de los electrodomésticos innecesarios como cepillos de dientes, abrelatas, cuchillos eléctricos, etc.</p>
+     <p>- Usa bombillas LED que duran mucho más que las bombillas  tradicionales y que inclusiva las fluorescentes. Son de bajo consumo de energía para dar la misma cantidad de luz.</p>
+     <p>-Evita los aerosoles que contienen CFCs y que son causantes de la destrucción de la capa de ozono, u otros gases que también contribuyen al efecto invernadero. </p>
+     <p>-La gran mayoría de los productos de limpieza que se anuncian no sólo son innecesarios sino también muy nocivos para el medio ambiente.</p>
+     <p>-Evita usar productos agresivos: limpiahornos, lejía, etc., que impiden los procesos biológicos de depuración del agua. Nunca tires productos tóxicos, pintura o aceite de cocinar al desagüe.</p>
+     <p>Para ahorrar agua, instala un sistema de doble descarga en el inodoro, ya que vaciar la cisterna entera supone gastar de 10 a litros. Repara los grifos que gotean.</p>
+     <p>-Aprovecha bien el papel: úsalo por las dos caras, utilízalo reciclado</p>
+     <p>-Dejar de utilizar elautomivil</p>
+     <br>
+     </div>
+  </div>
+ </div>
+    <div data-role="footer" align="center" data-theme="a">
+  <h4>App 5<br> Martínez Poblano Ana Lilia</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+
+ </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>TIPOS DE CONTAMINACIÓN</h1>
+ </div>
+ <div data-role="content">
+ <div align="center">
+ <P>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son:</P></div>
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Agua</h1>
+     <div>
+     <p>Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.
+Contaminación del Agua</p>
+<div align="center"> <img src="imagenes/conta_agua.jpg" width="25%" height="25%"></div>
+     <br>
+     </div>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Aire</h1>
+     <div>
+     <p>La contaminación del aire altera la composición química y natural del aire. La respiración es un proceso importante para la vida de todos los seres vivos. Por lo tanto, si el aire que nos rodea está contaminado con gases venenosos, tendría un efecto fatal en nosotros.</p>
+     <div align="center">
+     <img src="imagenes/contaminacion-del-aire.jpg" width="25%" height="25%"></div>
+     <br>
+     </div>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Suelo</h1>
+     <div>
+     <p>Suelo pelado de su fertilidad natural mediante el uso de sustancias químicas artificiales, como los pesticidas, insecticidas, etc maduración agentes que se conoce como “contaminación del suelo”. Las plantas dependen de los compuestos nitrogenados presentes en el suelo para su nutrición. El uso de insecticidas, pesticidas y otras sustancias químicas artificiales absorbe el nitrógeno del suelo por lo que es apto para el crecimiento de las plantas. Las plantas son responsables de mantener el suelo de una manera firme así, cuando las plantas no pueden crecer divide el suelo, lo que conduce a la erosión del suelo.</p>
+     <div align="center">
+     <img src="imagenes/suelo.jpg" width="25%" height="25%"></div>
+     <br>
+     </div>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Térmica</h1>
+     <div>
+     <p>Aumento de la temperatura en el ecosistema debido a la liberación de energía de calor excesivo en el medio ambiente por métodos artificiales o desastres naturales que se llama “La contaminación térmica”. El dióxido de carbono tiene una propiedad de bloquear el calor salga de la atmósfera y por lo que el calor que viene del sol es atrapada en la atmósfera.</p>
+     <div align="center">
+     <img src="imagenes/termica.jpg" width="25%" height="25%"></div>
+     <br>
+     </div>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación radiactiva</h1>
+     <div>
+     <p>Contaminación radiactiva se produce cuando “RADIACTIVO” desintegrarse liberando metales peligrosos rayos beta que pueden causar cáncer y otras enfermedades mutativas. </p>
+     <img src="imagenes/radiactiva.jpg" width="25%" height="25%">
+     <br>
+     </div>
+  </div>
+  
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Acústica</h1>
+     <div>
+     <p>Hay diferentes cualidades de los sonidos. Los sonidos que no son agradables de oír se llaman “ruidos”. Así que un exceso de ruido en el exterior conduce a la “contaminación acústica”. Esto puede ser experimentado por bocinazos demasiados vehículos en las carreteras, maquinaria pesada está operando a la intemperie.</p>
+     <br>
+     </div>
+  </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Lumínica</h1>
+     <div>
+     <p> El exceso de luz en la retina provoca gran incomodidad en los ojos, especialmente en condiciones de poca luz, como durante la noche. Las luces brillantes tensión de los ojos y también le dan dolores de cabeza y migrañas. </p>
+     <img src="imagenes/luminica.jpg" width="25%" height="25%">
+     <br>
+     </div>
+  </div>
+  
+ </div>
+ <div data-role="footer" align="center" data-theme="a">
+  <h4>App 5<br> Martínez Poblano Ana Lilia</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>CALENTAMIENTO GLOBAL Y CAMBIO CLIMÁTICO</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p>A la fecha han habido muchos cambios y avances paulatinos en la opinión científica, política y pública sobre el cambio climático y el calentamiento global.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/calentamiento_global1.png',1)"><img src="imagenes/calentamiento_global.png" width="598" height="216" id="Image20"></a>
+  </div>
+ 
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Cambio climático</h1>
+     <div>
+     <p>El Cambio Climático es un cambio significativo y duradero de los patrones locales o globales del clima, las causas pueden ser naturales, como por ejemplo, variaciones en la energía que se recibe del Sol, erupciones volcánicas, circulación oceánica, procesos biológicos y otros, o puede ser causada por influencia antrópica (por las actividades humanas), como por ejemplo, a través de la emisión de CO2 y otros gases que atrapan calor, o alteración del uso de grandes extensiones de suelos que causan, finalmente, un calentamiento global. </p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/calen.jpg',1)"><img src="imagenes/calentamiento.jpg" width="300" height="300" id="Image21"></a><br>
+     </div>
+  </div>
+  
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Calentamiento Global</h1>
+     <div>
+     <p>El Calentamiento Global es un aumento de la temperatura de la atmósfera terrestre que se ha estado observando desde finales del siglo XIX. Se ha observado un aumento de aproximadamente 0.8 ºC desde que se realizan mediciones confiables, dos tercios de este aumento desde 1980. Hay una certeza del 90% (actualizada a 95% en el 2013) de que la causa del calentamiento es el aumento de gases de efecto invernadero que resultan de las actividades humanas como la quema de combustibles fósiles (carbón, gasolina, gas natural y petróleo) y la deforestación.</p>
+     <div align="center">
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/cambio1.gif',1)"><img src="imagenes/cambio.jpg" width="300" height="300" id="Image22"></a></div>
+     <br>
+     </div>
+  </div>
+  
+ </div>
+    <div data-role="footer" align="center" data-theme="a">
+  <h4>App 5<br> Martínez Poblano Ana Lilia</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>POSIBLES SOLUCIONES CONTRA LA CONTAMINACIÓN</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <p>Utilización de catalizadores en los coches para disminuir los gases contaminantes que despiden.</p>
+<p>Empleo del transporte público y medios ecológicos para contaminar menos.</p>
+<p>Recuperación de aguas: se pueden recuperar de forma química a través de tratamientos biológicos, con organismos que descomponen la materia orgánica en nitrato y en dióxido de carbono.</p>
+<p>Eliminación de acumulación de nutrientes en lagos pequeños: estos nutrientes provienen de restos de plantas muertas que podrían provocar eutrofización del agua.</p>
+<p>No abusar de fertilizantes y pesticidas en cultivos y cosechas: para poder eliminar el nitrato del suelo se utilizan métodos biológicos como el cultivo de bacterias desnitrificantes.</p>
+<p>Reciclar es una actividad en la que todos podemos colaborar: separar  los materiales de forma correcta y procurar que su recogida selectiva se realice en el punto de origen para no contaminar al transportarse.</p>
+<p>Evitar hacer ruidos molestos: porque la contaminación sonora es una de las causas principales de molestias a nivel psicológico como el estrés.</p>
+<p>Al comprar productos para el hogar, procurar que sean lo menos contaminantes posible. </p>
+<p>Reforestación: recuperar áreas donde se ha producido una tala indiscriminada de árboles y plantas. </p>
+<p> agua y  buscar métodos para reciclarla: el agua que utilizamos en los hogares se puede reutilizar.</p>
+<p>Uso de energías alternativas como la solar y la eólica.</p></div>
+ <div></div>
+ </div>
+    <div data-role="footer" align="center" data-theme="a">
+  <h4>App 5<br> Martínez Poblano Ana Lilia</h4>
+  <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<br><br>
+</div>
+ </div>
+
+</body>
+ </html>
